@@ -7,7 +7,7 @@ module.exports = {
 	permissions: ['SEND_MESSAGES'],
 	ownerOnly: false,
 	usage: 'yugioh <card name>',
-	examples: ['yugioh Dark Magician'],
+	examples: ['yugioh Dragon blanc aux yeux bleus'],
 	description: 'Renvoie les informations d\'une carte Yu-Gi-Oh!',
 	async run(client, message, args) {
 		if (!args.length) {
