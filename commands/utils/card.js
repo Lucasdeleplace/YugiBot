@@ -39,7 +39,7 @@ module.exports = {
 				.addField('Race', card.race, true)
 				.addField('Attribut', card.attribute ? card.attribute : 'N/A', true);
                 if (card.card_sets && card.card_sets.length > 0) {
-                    const sets = card.card_sets.map(set => `${set.set_name} (${set.set_code})`).join('\n');
+                    const sets = card.card_sets.reverse().slice(0, 5).map(set => `${set.set_name} (${set.set_code}) : ${set.set_price}`).join('\n');
                     embed.addField('Sets', sets);
                 }
 
