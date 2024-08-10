@@ -2,12 +2,12 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 module.exports = {
-	name: 'yugioh',
+	name: 'card',
 	category: 'utils',
 	permissions: ['SEND_MESSAGES'],
 	ownerOnly: false,
-	usage: 'yugioh <card name>',
-	examples: ['yugioh Dragon blanc aux yeux bleus'],
+	usage: 'card <card name>',
+	examples: ['card Dragon blanc aux yeux bleus'],
 	description: 'Renvoie les informations d\'une carte Yu-Gi-Oh!',
 	async run(client, message, args) {
 		if (!args.length) {
